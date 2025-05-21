@@ -1,3 +1,4 @@
+import Center from './center/Center'
 import styles from './Main.module.scss'
 import Top from './top/Top'
 
@@ -6,6 +7,7 @@ const Main = () =>{
         <>
             <section className={styles.main}>
                 <Top/>
+                <Center/>
             </section>
         </>
     )

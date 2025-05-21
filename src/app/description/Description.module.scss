@@ -1,0 +1,87 @@
+@use '@/mixin.scss' as *;
+@use '@/styles.scss' as *;
+
+.description{
+    @include center_block;
+
+    &{
+        align-items: center;
+        margin-top: 160px;
+        gap: $space-x8;
+    }
+
+    &_left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: $space-x5;
+
+        &_title{
+            display: flex;
+            flex-direction: column;
+            gap: $space-x2;
+
+            h3{
+                @include title;
+            }
+
+            p{
+                color: $text-secondary;
+                @media(max-width: 1200px){
+                    display: none;
+                }
+            }
+
+            .mobile{
+                display: flex;
+
+                @media(min-width: 1201px){
+                    display: none;
+                }
+            }
+        }
+        
+        &_info{
+            display: flex;
+            gap: $space-x8;
+
+            @media(max-width: 1200px){
+                gap: $space-x2
+            }
+
+            .piece{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                h4{
+                    line-height: 130%;
+                    font-size: 36px;
+                    font-weight: 400;
+
+                    @media(max-width: 390px){
+                        line-height: 140%;
+                        font-size: 28px;
+                    }
+                }
+
+                p{
+                    max-width: 97px;
+                    color: $text-secondary;
+                    line-height: 140%;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    &_right{
+        width: 100%;
+
+        img{
+            object-fit: cover;
+            height: 430px;
+            max-width: 568px;
+        }
+    }
+}
