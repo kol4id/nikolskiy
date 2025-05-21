@@ -11,6 +11,10 @@
     width: 100%;
 
     @media(min-width: 1800px){
-       background-position: center; 
+        background-position: 0 -250px;
+    }
+
+    @media(min-width: 2100px){
+        background-position: 0 -450px;
     }
 }

@@ -1,0 +1,82 @@
+@use '@/mixin.scss' as *;
+@use '@/styles.scss' as *;
+
+.info{
+    @include center_block;
+
+    &{
+        flex-direction: column;
+        gap: $space-x8;    
+        margin-top: 230px;
+    }
+
+    &_top{
+        display: flex;
+        flex-direction: column;
+        gap: $space-x3;
+
+        &_title{
+            display: flex;
+            flex-direction: column;
+            gap: $space-x1;
+
+            p{
+                display: flex;
+                width: fit-content;
+                background-color: $surface-cards-neutral-default;
+                padding: $space-x1 $space-x2;
+                border-radius: 18px;
+            }
+
+            h1{
+                line-height: 120%;
+                font-weight: 600;
+                font-size: 68px;
+
+                @media(max-width: 1200px){
+                    line-height: 130%;
+                    font-weight: 600;
+                    font-size: 36px;
+                }
+            }
+
+            h1.second{
+                color: $text-secondary;
+            }
+        }
+
+        .description{
+            width: 626px;
+        }
+    }
+
+    &_bottom{
+        
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 140%;
+            padding: $space-x2;
+            font-size: 18px;
+            color: $text-primary-on-color;
+            border: none;
+            width: 320px;
+            height: 60px;
+            background-color: $surface-buttons-red-primary;
+
+            &:hover{
+                background-color: $surface-buttons-red-hover;
+            }
+
+            &:active{
+                background-color: $surface-buttons-red-active;
+            }
+
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
