@@ -1,0 +1,16 @@
+@use '@/styles.scss' as *;
+
+@mixin center_block{
+    display: flex;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media(max-width: 1200px){
+        padding: 0 $space-x2;
+    }
+
+    @media(max-width: 390px){
+        padding: 0 $space-x1;
+    }
+}

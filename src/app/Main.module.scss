@@ -1,0 +1,9 @@
+@use '@/styles.scss' as *;
+
+.main{
+    background-color: $surface-bg-neutral;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,16 @@
+@use '@/styles.scss' as *;
+
+.top{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: $space-x4 $space-x6 $space-x6 $space-x6;
+    
+    height: 800px;
+    width: 100%;
+
+    @media(min-width: 1800px){
+       background-position: center; 
+    }
+}
