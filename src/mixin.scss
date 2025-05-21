@@ -14,3 +14,15 @@
         padding: 0 $space-x1;
     }
 }
+
+@mixin title{
+    font-size: 44px;
+    color: $text-primary;
+    line-height: 130%;
+    font-weight: 600;
+
+    @media(max-width: 1200px){
+        font-size: 28px;
+        line-height: 140%;
+    }
+}
