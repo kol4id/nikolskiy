@@ -1,4 +1,5 @@
 import Header from '../header/Header'
+import Info from './Info'
 import styles from './Top.module.scss'
 import velder from '@/assets/velder.webp'
 
@@ -10,7 +11,7 @@ const Top = () =>{
                 style={{backgroundImage: `url(${velder})`}}
             >
                 <Header/>
-                ффывфывыфв
+                <Info/>
             </section>
         </>
     )
