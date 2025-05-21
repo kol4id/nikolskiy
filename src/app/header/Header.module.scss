@@ -6,7 +6,22 @@
     @include center_block;
 
     nav{
+        height: 48px;
+        align-self: flex-end;
         display: flex;
-        gap: $space-x4
+        align-items: center;
+        gap: $space-x4;
+    }
+
+    img{
+        width: auto;
+        height: 80px;
+    }
+
+    .phone{
+        height: 48px;
+        display: flex;
+        align-self: flex-end;
+        align-items: center;
     }
 }
