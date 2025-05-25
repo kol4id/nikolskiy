@@ -1,0 +1,78 @@
+@use '@/mixin.scss' as *;
+@use '@/styles.scss' as *;
+
+.mobile{
+    display: flex;
+    flex-direction: column;
+    gap: $space-x4;
+    padding-bottom: 48px;
+    border-bottom: $border-secondary 1px solid;
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+
+    &_title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $space-x2;
+
+        @media (min-width: 600px) {
+            justify-content: flex-start;
+        }
+
+        img{
+            width: 123px;
+            height: 60px;
+        }
+
+        h3{
+            font-weight: 600;
+            font-size: 24px;
+        }
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        gap: $space-x2;
+        width: 276px;
+
+        h6{
+            margin-top: 8px;
+            font-size: 24px;
+        }
+    }
+
+    .work_time{
+        // font-family: 'Inter';
+        display: flex;
+        flex-direction: column;
+        gap: $space-x2;
+
+        h6{
+            font-size: 24px;
+        }
+    }
+
+    .social_links{
+        width: 136px;
+        display: flex;
+        gap: $space-x2;
+
+
+        a{
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+
+            @include primary_hover;
+        }
+    }
+}

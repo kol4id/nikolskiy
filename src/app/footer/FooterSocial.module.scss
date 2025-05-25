@@ -1,0 +1,44 @@
+@use '@/mixin.scss' as *;
+@use '@/styles.scss' as *;
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 252px;
+    height: 182px;
+
+    h3{
+        font-weight: 600;
+        font-family: var(--font-montserrat-alt);
+        font-size: 24px;
+    }
+
+    .logo{
+        max-width: 200px;
+        max-height: 83px;
+    }
+    
+    &_links{
+        width: 104px;
+        display: flex;
+        gap: $space-x2;
+
+        a{
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+
+            @include primary_hover;
+        }
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+}

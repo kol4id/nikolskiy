@@ -1,0 +1,180 @@
+@use '@/mixin.scss' as *;
+@use '@/styles.scss' as *;
+
+.consultation{
+    margin-top: 160px;
+    padding: 0 $space-x6;
+    background-color: $surface-cards-red-default;
+
+    @media(max-width: 1200px){
+        margin-top: 64px;
+        padding: 0;
+    }
+
+    &_centered{
+        @include center_block;
+
+        &{
+            gap: $space-x8;
+            padding: $space-x8 0;
+        }
+
+        @media (max-width: 1300px) {
+            gap: $space-x4;
+        }
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 0px;
+            padding: 0px;
+        }
+
+        &_left{
+            background-color: $surface-bg-consult-red;
+            padding: $space-x6;
+            gap: $space-x4;
+            width: 564px;
+            height: 448px;
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: 1260px) {
+                width: 100%;
+            }
+
+            @media (max-width: 1200px) {
+                width: min(390px, 100%);
+                min-width: 320px;
+                height: 481px;
+                padding: $space-x4 $space-x2;
+            }
+
+            @media (max-width: 390px) {
+                padding: $space-x4 $space-x1 $space-x4 $space-x1;
+            }
+
+            h2{
+                @include title;
+
+                &{
+                    color: $text-primary-on-color
+                }
+            }
+
+            form{
+                color: $text-primary;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                .inputs{
+                    display: flex;
+                    flex-direction: column;
+                    gap: $space-x2;
+
+                    input{
+                        font-size: 18px;
+                        height: 60px;
+                        border: none;
+                        padding: $space-x2 $space-x3 $space-x2 $space-x3;
+                    }
+
+                    p{
+                        text-align: left;
+                        font-size: 12px;
+                    }
+                }
+
+                .buttons{
+                    width: 100%;
+                    display: flex;
+                    gap: $space-x2;
+                    justify-content: space-between;
+
+                    @media (max-width: 1200px) {
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: $space-x2
+                    }
+
+                    button{
+                        font-weight: 400;
+                        color: $text-primary-inverse;
+                        cursor: pointer;
+                        align-self: center;
+                        border: none;
+                        background-color: $surface-buttons-neutral-primary-default;
+                        height: 60px;
+                        width: 100%;
+                        font-size: 18px;
+
+                        &:hover{
+                            background-color: $surface-buttons-neutral-primary-hover;
+                        }
+
+                        &:active{
+                            background-color: $surface-buttons-neutral-primary-active;
+                        }
+
+                        @media (max-width: 1200px) {
+                            width: 100%;
+                        }
+                    }
+
+                    nav{
+                        display: flex;
+                        gap: $space-x2;
+                        
+
+                        a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 60px;
+                            height: 60px;
+                            border: 1px solid $border-primary;
+
+                            @media (max-width: 1200px) {
+                                width: 100%;
+                            }
+
+                            &:hover{
+                                background-color: $surface-buttons-neutral-secondary-hover;
+                            }
+
+                            &:active{
+                                background-color: $surface-buttons-neutral-secondary-active;
+                            }
+
+                            p{
+                                padding: 0 $space-x05;
+                                @media(min-width: 1201px){
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &_right{
+            overflow: hidden;
+            width: 568px;
+            height: 448px;
+
+            @media (max-width: 1260px) {
+                width: 100%;
+            }
+
+            @media (max-width: 1200px) {
+                width: min(390px, 100%);
+                min-width: 320px;
+            }
+
+            @media (max-width: 390px) {
+            }
+        }
+    }
+}

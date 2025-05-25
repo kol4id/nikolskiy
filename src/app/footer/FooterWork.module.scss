@@ -1,0 +1,18 @@
+@use '@/mixin.scss' as *;
+@use '@/styles.scss' as *;
+
+.work_time{
+    display: flex;
+    flex-direction: column;
+    gap: $space-x2; 
+    width: 252px;
+
+    h6{
+        @include title_small
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 140%;
+    }
+}

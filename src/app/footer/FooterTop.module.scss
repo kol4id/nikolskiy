@@ -1,0 +1,37 @@
+@use '@/mixin.scss' as *;
+@use '@/styles.scss' as *;
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    border-bottom: $border-secondary 1px solid;
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
+
+    a{
+        @include label_hover;
+    }
+
+    &_left{
+        display: flex;
+        gap: $space-x8;
+
+        @media (max-width: 1280px) {
+            gap: $space-x4;
+        }
+
+    }
+
+    &_right{
+        display: flex;
+        gap: $space-x8;
+
+        @media (max-width: 1280px) {
+            gap: $space-x4;
+        }
+    }
+}

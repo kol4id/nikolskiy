@@ -1,0 +1,30 @@
+@use '@/mixin.scss' as *;
+@use '@/styles.scss' as *;
+
+.footer{
+    padding: $space-x8 $space-x6;
+    color: $text-primary;
+    line-height: 140%;
+    font-size: 18px;
+
+    @media (max-width: 1200px) {
+        padding: $space-x4 0 $space-x8 0;
+        gap: 0px;
+    }
+
+    &_main{
+        @include center_block;
+
+        &{
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: $space-x2;
+        }
+    
+        @media (min-width: 1200px) {
+            padding: 0;
+        }
+    }
+}

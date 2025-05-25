@@ -1,0 +1,10 @@
+@use '@/styles.scss' as *;
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width: 1200px){
+        padding: 0;
+    }
+}
