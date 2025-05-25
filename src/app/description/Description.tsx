@@ -4,7 +4,7 @@ import welder from '@/assets/welder_description.jpg'
 const Description = () =>{
     return(
         <>
-            <section className={styles.description}>
+            <section className={styles.description} id='aboutUs'>
                 <article className={styles.description_left}>
                     <div className={styles.description_left_title}> 
                         <h3>
@@ -26,6 +26,20 @@ const Description = () =>{
                         <div className={styles.piece}>
                             <h4>98%</h4>
                             <p>Довольных клиентов</p>
+                        </div>
+                    </div>
+                    <div className={styles.description_left_mobile}>
+                        <div className={styles.piece}>
+                            <h4>98%</h4>
+                            <p>Довольных клиентов</p>
+                        </div>
+                        <div className={styles.piece}>
+                            <h4>1000+</h4>
+                            <p>Довольных клиентов</p>
+                        </div>
+                        <div className={styles.piece}>
+                            <h4>15+</h4>
+                            <p>Лет на авторынке</p>
                         </div>
                     </div>
                 </article>

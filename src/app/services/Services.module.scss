@@ -1,0 +1,147 @@
+@use '@/mixin.scss' as *;
+@use '@/styles.scss' as *;
+
+.services{
+    @include center_block;
+
+    &{
+        flex-direction: column;
+        margin-top: 160px;
+        gap: $space-x6;
+    }
+
+    @media(max-width: 1200px){
+        margin-top: 64px;
+        gap: $space-x4;
+    }
+
+    @media(max-width: 800px){
+        align-items: center;
+    }
+
+    h3{
+        @include title;
+
+        &{
+            width: 428px;
+            text-align: left;
+        }
+
+        @media(max-width: 600px){
+            width: 358px;
+        }
+
+        @media(max-width: 390px){
+            width: 100%;
+        }
+    }
+
+    &_cards, &_mobile{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $space-x6;
+
+        @media(max-width: 1300px){
+            gap: $space-x4;
+        }
+
+        @media(max-width: 800px){
+            display: flex;
+            flex-direction: column;
+            gap: $space-x2;
+            // margin: 0 auto;
+        }
+    }
+
+    &_cards{
+        @media(max-width: 390px){
+            display: none;
+        }  
+    }
+
+    &_mobile{
+        display: none;
+
+        @media(max-width: 390px){
+            display: flex;
+            padding: 0;
+        }
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 568px;
+    height: 268px;
+    padding: $space-x3;
+    background-size: cover;
+
+    @media(max-width: 1260px){
+        width: 100%;
+        // width: 528px;
+        height: 268px;
+    }
+
+    @media(max-width: 1200px){
+        // width: 508px;
+        height: 258px;
+    }
+
+    @media(max-width: 1100px){
+        width: 458px;
+        height: 260px;
+    }
+
+    @media(max-width: 1000px){
+        width: 400px;
+        height: 260px;
+    }
+
+    @media(max-width: 900px){
+        width: 358px;
+        height: 290px;
+    }
+
+    @media(max-width: 800px){
+        width: 428px;
+        height: 240px;
+    }
+
+    @media(max-width: 600px){
+        width: 358px;
+        height: 266px;
+    }
+
+    @media(max-width: 390px){
+        width: 100%;
+        height: 275px;
+        padding: $space-x3 $space-x2;
+    }
+
+    &_title{
+        display: flex;
+        flex-direction: column;
+        gap: $space-x2;
+
+        h5{
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 140%;
+
+            @media(max-width: 1200px){
+                font-size: 24px;
+            }
+        }
+    }
+
+    .price{
+        background-color: $surface-bg-red;
+        color: $text-primary;
+        font-weight: 600;
+        padding: $space-x05 $space-x2;
+        margin-left: auto;
+    }
+    
+}

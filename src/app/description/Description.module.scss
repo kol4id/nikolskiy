@@ -10,11 +10,30 @@
         gap: $space-x8;
     }
 
+    @media(max-width: 1200px){
+        margin-top: 64px;
+    }
+
+    @media(max-width: 1000px){
+        flex-direction: column;
+        gap: $space-x6;
+        width: 500px;
+    }
+
+    @media(max-width: 600px){
+        gap: $space-x4;
+        width: min(390px, 100%);
+    }
+
     &_left{
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: $space-x5;
+
+        @media(max-width: 1000px){
+            gap: $space-x3;
+        }
 
         &_title{
             display: flex;
@@ -41,7 +60,7 @@
             }
         }
         
-        &_info{
+        &_info, &_mobile{
             display: flex;
             gap: $space-x8;
 
@@ -73,6 +92,21 @@
                 }
             }
         }
+
+        &_info{
+            @media(max-width: 1000px){
+                display: none;
+            }
+        }
+
+        &_mobile{
+            display: none;
+            @media(max-width: 1000px){
+                display: flex;
+                gap: 0px;
+                justify-content: space-between;
+            }
+        }
     }
 
     &_right{
@@ -82,6 +116,16 @@
             object-fit: cover;
             height: 430px;
             max-width: 568px;
+
+            @media(max-width: 1000px){
+                height: 352px;
+                max-width: 470px;
+            }
+
+            @media(max-width: 600px){
+                height: 240px;
+                width: min(390px, 100%);
+            }
         }
     }
 }

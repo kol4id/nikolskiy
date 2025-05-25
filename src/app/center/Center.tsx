@@ -1,4 +1,5 @@
 import Description from '../description/Description'
+import Services from '../services/Services'
 import styles from './Center.module.scss'
 
 const Center = () =>{
@@ -6,6 +7,7 @@ const Center = () =>{
         <>
             <section className={styles.center}>
                 <Description/>
+                <Services/>
             </section>
         </>
     )
