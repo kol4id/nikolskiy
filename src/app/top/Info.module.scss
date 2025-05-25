@@ -10,6 +10,17 @@
         margin-top: 230px;
     }
 
+    @media(max-width: 1200px){
+        margin-top: auto;
+        padding-bottom: $space-x4;
+    }
+
+    @media(max-width: 800px){
+        margin-top: auto;
+        padding-bottom: $space-x4;
+        gap: $space-x6;
+    }
+
     &_top{
         display: flex;
         flex-direction: column;
@@ -26,6 +37,10 @@
                 background-color: $surface-cards-neutral-default;
                 padding: $space-x1 $space-x2;
                 border-radius: 18px;
+
+                @media(max-width: 800px){
+                    display: none;
+                }
             }
 
             h1{
@@ -38,6 +53,10 @@
                     font-weight: 600;
                     font-size: 36px;
                 }
+
+                @media(max-width: 390px){
+                    max-width: 304px;
+                }
             }
 
             h1.second{
@@ -47,30 +66,26 @@
 
         .description{
             width: 626px;
+
+            @media(max-width: 800px){
+                display: none;
+            }
         }
     }
 
     &_bottom{
         
-        button{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            line-height: 140%;
-            padding: $space-x2;
-            font-size: 18px;
-            color: $text-primary-on-color;
-            border: none;
-            width: 320px;
-            height: 60px;
-            background-color: $surface-buttons-red-primary;
-
-            &:hover{
-                background-color: $surface-buttons-red-hover;
+        a{
+            @include red_button;
+            
+            &{
+                padding: $space-x2;
+                width: 320px;
+                height: 60px;
             }
 
-            &:active{
-                background-color: $surface-buttons-red-active;
+            @media(max-width: 390px){
+                width: 100%;
             }
 
             img{

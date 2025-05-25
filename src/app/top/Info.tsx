@@ -16,10 +16,12 @@ const Info = () =>{
                     <p className={styles.description}>Удаляем ржавчину, краску и другие загрязнения — без повреждений.Проводим сварочные работы любого уровня сложности.</p>
                 </article>
                 <article className={styles.info_bottom}>
-                    <button >
+                    <a 
+                        href='#consultation'
+                    >
                         <p>Связаться с нами</p>
                         <img loading='lazy' src={arrow}></img>
-                    </button>
+                    </a>
                 </article>
             </section>
         </>

@@ -1,0 +1,24 @@
+@use '@/mixin.scss' as *;
+@use '@/styles.scss' as *;
+
+
+.header_mobile{
+    z-index: 5;
+    display: none;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 $space-x2;
+    background-color: $surface-bg-neutral;
+    box-shadow: 0 3px 4px #00000040;
+    
+    @media(max-width: 1200px){
+        display: flex;
+    }
+
+    @media(max-width: 390px){
+        padding: 0 $space-x1;
+    }
+}

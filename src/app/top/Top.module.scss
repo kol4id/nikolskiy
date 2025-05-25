@@ -5,10 +5,23 @@
     flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url('@/assets/welder.webp');
     padding: $space-x4 $space-x6 $space-x6 $space-x6;
     
     height: 800px;
     width: 100%;
+
+    @media(max-width: 800px){
+        background-image: url('@/assets/welder_reverse.webp');
+    }
+
+    @media(max-width: 690px){
+        background-position: -125px 0;
+    }
+
+    @media(max-width: 1200px){
+        padding: 0;
+    }
 
     @media(min-width: 1800px){
         background-position: 0 -250px;

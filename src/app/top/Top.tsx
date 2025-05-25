@@ -8,7 +8,7 @@ const Top = () =>{
         <>
             <section     
                 className={styles.top}
-                style={{backgroundImage: `url(${welder})`}}
+                // style={{backgroundImage: `url(${welder})`}}
             >
                 <Header/>
                 <Info/>

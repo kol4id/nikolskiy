@@ -1,0 +1,52 @@
+@use '@/mixin.scss' as *;
+@use '@/styles.scss' as *;
+
+.menu{
+    display: none;
+
+    @media (max-width: 1200px) {
+        display: flex;
+        gap: $space-x1;
+    }
+
+    .buttons_menu{
+        display: flex;
+        gap: $space-x1;
+    }
+
+    .button, .button_menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $border-primary;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        border-radius: $borderRadius-x6;
+    }
+
+    .button_menu{
+        border: none;
+        background-color: $surface-buttons-red-primary;
+
+        @media(min-width: 1200px){
+            &:hover{
+                background-color: $surface-buttons-red-hover;
+            }
+
+            &:active{
+                background-color: $surface-buttons-red-active;
+            }
+        } 
+    }
+
+    .button{
+        &:hover{
+            background-color: $surface-buttons-neutral-secondary-hover;
+        }
+
+        &:active{
+            background-color: $surface-buttons-neutral-secondary-active;
+        }
+    }
+}
