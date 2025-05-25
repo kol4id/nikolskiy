@@ -1,0 +1,11 @@
+@use '@/styles.scss' as *;
+
+.center{
+    display: flex;
+    flex-direction: column;
+    padding: 0 $space-x6;
+
+    @media(max-width: 1200px){
+        padding: 0;
+    }
+}
