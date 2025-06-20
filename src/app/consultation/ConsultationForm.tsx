@@ -122,16 +122,18 @@ const ConsultationForm = () =>{
                                 href='https://wa.me/79017337699'
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                aria-label="WhatsApp"
                             >
-                                <img loading="lazy" src={wa}/>
+                                <img loading="lazy" src={wa} alt="WhatsApp иконка"/>
                                 <p>WhatsApp</p>
                             </a>
                             <a
                                 href='https://t.me/NikolskyMSK'
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                aria-label="Telegram"
                             >
-                                <img loading="lazy" src={tg}/>
+                                <img loading="lazy" src={tg} alt="Telegram иконка"/>
                                 <p>Telegram</p>
                             </a>
                         </nav>

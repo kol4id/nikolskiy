@@ -8,6 +8,7 @@ const FooterMobileContacts = () =>{
                     href='https://yandex.ru/maps/-/CHvNRONl'
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label='Яндекс карты'
                 > г. Балашиха, <br />
                     Носовихинское ш., 26
                 </a>
@@ -16,8 +17,9 @@ const FooterMobileContacts = () =>{
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{textDecoration: 'underline solid'}}
+                    aria-label='Никольский'
                 >niksto.ru</a>
-                <a href="tel:+79015184400" className={styles.phone}>7 (901) 518 44 00</a>
+                <a href="tel:+79015184400" className={styles.phone} aria-label='Телефон'>7 (901) 518 44 00</a>
             </div>
         </>
     )

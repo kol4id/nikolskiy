@@ -5,7 +5,7 @@ const FooterMobileTitle = () =>{
     return(
         <>
             <article className={styles.mobile_title}>
-                <img src={logo} loading='lazy'></img>
+                <img src={logo} loading='lazy' alt='лого никольского автоцентра'></img>
                 {/* <h3>никольский</h3> */}
             </article>
         </>

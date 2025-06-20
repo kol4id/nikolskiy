@@ -11,6 +11,10 @@
     height: 800px;
     width: 100%;
 
+    @media(max-width: 1200px){
+        padding: 0;
+    }
+
     @media(max-width: 800px){
         background-image: url('@/assets/welder_reverse.webp');
     }
@@ -19,8 +23,8 @@
         background-position: -125px 0;
     }
 
-    @media(max-width: 1200px){
-        padding: 0;
+    @media(max-width: 500px){
+        height: 650px;
     }
 
     @media(min-width: 1800px){

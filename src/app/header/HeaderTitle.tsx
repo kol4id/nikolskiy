@@ -6,7 +6,7 @@ const HeaderTitle = () =>{
         <>
             <article className={styles.title}>
                 <section className={styles.container}>
-                    <img loading='lazy' src={logo}/>
+                    <img loading='lazy' src={logo} alt='лого никольского автоцентра'/>
                 </section>
             </article>
         </>

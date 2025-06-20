@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  nikolsky-app:
+    container_name: nikolsky
+    build: .
+    image: yungbrick/nikolsky:latest
+    ports:
+      - "8080:4173" 
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

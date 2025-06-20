@@ -1,5 +1,5 @@
 import styles from './Description.module.scss'
-import welder from '@/assets/welder_description.jpg'
+import welder from '@/assets/welder_description.webp'
 
 const Description = () =>{
     return(
@@ -17,7 +17,7 @@ const Description = () =>{
                     <div className={styles.description_left_info}>
                         <div className={styles.piece}>
                             <h4>1000+</h4>
-                            <p>Довольных клиентов</p>
+                            <p>Работ выполнено</p>
                         </div>
                         <div className={styles.piece}>
                             <h4>15+</h4>
@@ -35,7 +35,7 @@ const Description = () =>{
                         </div>
                         <div className={styles.piece}>
                             <h4>1000+</h4>
-                            <p>Довольных клиентов</p>
+                            <p>Работ выполнено</p>
                         </div>
                         <div className={styles.piece}>
                             <h4>15+</h4>
@@ -44,7 +44,7 @@ const Description = () =>{
                     </div>
                 </article>
                 <article className={styles.description_right}>
-                    <img loading='lazy' src={welder}></img>
+                    <img loading='lazy' src={welder} alt='Сварщик варит металл'></img>
                 </article>
             </section>
         </>

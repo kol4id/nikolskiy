@@ -9,6 +9,7 @@ const FooterBottom = () =>{
                         href='https://copylobby.art/'
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label='copylobby.art'
                     >
                         copylobby.art
                     </a> 

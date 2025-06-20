@@ -1,18 +1,20 @@
 @use '@/styles.scss' as *;
 
 :root {
-  font-family: "Inter", sans-serif;;
-  line-height: 140%;
-  letter-spacing: 0%;
-  font-size: 18px;
-  font-weight: 400;
-  color: $text-primary;
+  &{
+    font-family: "Inter", sans-serif;
+    // letter-spacing: 0.15px !important;
+    line-height: 140%;
+    letter-spacing: 0.025rem !important;
+    font-size: 18px;
+    font-weight: 400;
+    color: $text-primary;
 
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    // font-synthesis: none;
+    // // text-rendering: optimizeLegibility;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 html,

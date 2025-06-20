@@ -4,15 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --host --port 4173"
   },
   "dependencies": {
     "@pbe/react-yandex-maps": "^1.2.5",
     "axios": "^1.9.0",
     "framer-motion": "^12.12.2",
+    "pm2": "^6.0.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

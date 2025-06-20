@@ -29,13 +29,13 @@ const HeaderModalMenu: FC<IProps> = ({onClose}) =>{
                         <div className={styles.links}>
                             <h6>Автотехцентр</h6>
                             <nav>
-                                <a href='#services' onClick={onClose}>Услуги</a>
-                                <a href='#aboutUs' onClick={onClose}>О нас</a>
-                                <a href='#consultation' onClick={onClose}>Контакты</a>
+                                <a href='#services' onClick={onClose} aria-label='Услуги'>Услуги</a>
+                                <a href='#aboutUs' onClick={onClose} aria-label='О нас'>О нас</a>
+                                <a href='#consultation' onClick={onClose} aria-label='Контакты'>Контакты</a>
                             </nav>
                         </div>
-                        <article className={styles.phone}>
-                            <a href="tel:+79015184400" className={styles.phone}>7 (901) 518 44 00</a>
+                        <article className={styles.phone_section}>
+                            <a href="tel:+79015184400" className={styles.phone} aria-label='Телефон'>7 (901) 518 44 00</a>
                             <section className={styles.map}>
                                 <a 
                                     className={styles.map_address}
@@ -43,17 +43,19 @@ const HeaderModalMenu: FC<IProps> = ({onClose}) =>{
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     onClick={onClose}
+                                    aria-label='Яндекс карты'
                                 > 
-                                    г. Балашиха, <br/>
+                                    г. Балашиха, <br/> 
                                     Носовихинское ш., 26
                                 </a>
                             </section>
                         </article>
-                        <a href='#consultation' className={styles.service}
+                        <a href='#consultation' className={styles.service} 
                             onClick={onClose}
+                            aria-label='Консультация'
                         >
                             <p>Связаться с нами</p>
-                            <img loading='lazy' src={arrow}></img>
+                            <img loading='lazy' src={arrow} alt='иконка указателя право-низ'></img>
                         </a>
                     </section>
                 </main>

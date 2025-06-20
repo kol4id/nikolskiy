@@ -21,8 +21,9 @@ const HeaderMenu: FC<IProps> = ({onClose}) =>{
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={onClose}
+                        aria-label='WhatsApp'
                     >
-                        <img loading='lazy' src={wa}/>
+                        <img loading='lazy' src={wa} alt='WhatsApp иконка'/>
                     </a>
                     <a
                         className={styles.button}
@@ -30,15 +31,17 @@ const HeaderMenu: FC<IProps> = ({onClose}) =>{
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={onClose}
+                        aria-label='Telegram'
                     >   
-                        <img loading='lazy' src={tg}/>
+                        <img loading='lazy' src={tg} alt='Telegram иконка'/>
                     </a>
                 </section>
-                <button 
+                <button
+                    aria-label="закрыть меню"
                     className={styles.button_menu}
                     onClick={() => onClose()}
                 >
-                    <img loading='lazy' src={close}/>
+                    <img loading='lazy' src={close} alt='иконка крестика'/>
             </button>
             </article>
         </>

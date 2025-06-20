@@ -37,15 +37,16 @@ const HeaderMenu = () =>{
                 <section
                     className={styles.buttons_menu}
                 >
-                    <a className={styles.button} href='#consultation'>
-                        <img loading='lazy' src={phone}/>
+                    <a className={styles.button} href="tel:+79015184400" aria-label='Телефон'>
+                        <img loading='lazy' src={phone} alt='иконка телефонной трубки'/>
                     </a>
                 </section>
-                <button 
+                <button
+                    aria-label="меню"
                     className={styles.button_menu}
                     onClick={handleOpen}
                 >
-                    <img src={menu} loading='lazy'/>
+                    <img src={menu} loading='lazy' alt='иконка меню'/>
                 </button>
                 <Modal
                     isOpen={isOpen}

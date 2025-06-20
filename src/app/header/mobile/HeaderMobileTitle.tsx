@@ -6,7 +6,7 @@ const HeaderMobileTitle = () =>{
         <>
             <article className={styles.title}>
                 <section className={styles.container}>
-                    <img src={logo} loading='lazy'/>
+                    <img src={logo} loading='lazy' alt='лого никольского автоцентра'/>
                 </section>
             </article>
         </>
